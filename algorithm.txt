@@ -1,0 +1,23 @@
+TODO APP
+
+1. User should be able to add task
+2. User should be able to view task
+3. User shoulb be able to edit task
+
+Algorithm
+
+Adding task
+
+1. Provide a from to user that inclueds
+    1. title
+    2. description (optional)
+    3. due date
+
+Check all field except description is included
+    if not 
+        provide warning message to user 
+    else
+        create a task with provided data
+
+2. Profile
+    

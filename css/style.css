@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root 
+{
+    --backgroundColor : #fff;
+    --accent : #827FEA;
+    --text : #111;
+    --success : aqua;
+    --fail : red;
+    --headingFont : "Inter", sans-serif;
+    --textFont : "Roboto", sans-serif;
+    --IconFont : "Be Vietname Pro", sans-serif;
+}
+
+.flexrow-container 
+{
+    display: flex;
+    align-items: center;
+}
+
+.flexcol-container 
+{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.flexcol-center 
+{
+    align-items: center;
+}
+
+.flexcol-start
+{
+    align-items: flex-start;
+}
+
+.flexcol-end
+{
+    align-items: flex-end;
+}
+
+.primary-btn 
+{
+    background-color: var(--accent);
+    border: none;
+    box-shadow: 0px 2px 4px 0px var(--text);
+    color: var(--backgroundColor);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 1s linear;
+}
+
+.center 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    box-shadow: 0px 2px 4px 0px var(--text);
+    border-radius: 10px;
+}
+
+.banner 
+{
+    gap: 10px;
+    margin: 0px 20px;
+}
+
+.banner h1 
+{
+    font-size: 20px;
+    font-family: var(--IconFont);
+}
+
+.banner div 
+{
+    cursor: pointer;
+}
+
+.adding 
+{
+    width: 340px;
+    height: 90px;
+    margin: 20px auto 0px;
+    font-size: 16px;
+    color: var(--text);
+    font-family: var(--headingFont);
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px dotted var(--accent);
+    transition: all 1s linear;
+    cursor: pointer;
+}
+
+.adding:hover 
+{
+    border: 1px solid var(--accent);
+}
+
+.wrapper 
+{
+    width: 340px;
+    margin: 10px auto 20px;
+    justify-content: space-between;
+}
+
+.wrapper h2 
+{
+    font-size: 16px;
+    font-family: var(--headingFont);
+}
+
+.task-container 
+{
+    width: 340px;
+    margin: 10px auto;
+}
+
+p.success 
+{
+    color: var(--success);
+    font-family: var(--textFont);
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.task-container h3 
+{
+    font-family: var(--headingFont);
+}
+
+.task 
+{
+    width: 340px;
+    margin: 10px auto;
+    background-color: var(--accent);
+    height: 90px;
+    padding: 10px;
+    justify-content: space-between;
+    color: var(--backgroundColor);
+    font-family: var(--textFont);
+    border-radius: 10px;
+}
+
+.task h4
+{
+    font-size: 16px;
+    margin: 10px 0px;
+}
+
+.task p 
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.more 
+{
+    cursor: pointer;
+}
+
+.task.success 
+{
+    border: 2px solid var(--success);
+}
+
+.task.fail
+{
+    border: 2px solid var(--fail);
+}
+
+.task.pending 
+{
+    border: 2px solid var(--text);
+}
+
+div.task-container 
+{
+    font-family: var(--textFont);
+}
+
+input 
+{
+    width: 330px;
+    padding: 5px 10px;
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+input:focus 
+{
+    outline: none;
+    background-color: none;
+    box-shadow: 0px 0px 2px 0px var(--accent);
+}
+
+.adding-form 
+{
+    width: 380px;
+    background-color: var(--backgroundColor);
+    padding: 30px 0px;
+    margin: 0px auto;
+}
+
+#form 
+{
+    width: 330px;
+    margin: 0px auto;
+
+}
+
+label 
+{
+    margin-bottom: 5px;
+    font-family: var(--headingFont);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.add-btn, .discard-btn , .fail-btn
+{
+    width: 80px;
+    padding: 5px 10px;
+}
+
+.add-btn 
+{
+    margin-right: 10px;
+}
+
+.discard-btn, .fail-btn
+{
+    background-color: var(--fail);
+    border: none;
+    color: var(--backgroundColor);
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px 0px var(--text);
+    cursor: pointer;
+    transition: all 1s linear;
+}
+
+.discard-btn:hover, .fail-btn:hover, .primary-btn:hover 
+{
+    transform: scale(1.05);
+}
+
+.more 
+{
+    position: relative;
+}
+
+.button-container 
+{
+    display: none;
+    flex-flow: column;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    gap: 5px;
+}
+
+select.primary-btn:hover 
+{
+    transform: none;
+}
+
+header 
+{
+    position: relative;
+    box-shadow: 0px 2px 5px 0px var(--text);
+    padding: 20px 0px;
+}
+
+.menu-bar 
+{
+    background-color: var(--backgroundColor);
+    height: calc(100vh - 63px);
+    width: 0px;
+    box-shadow: 2px 0px 4px 0px var(--text);
+    border-radius: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    overflow: hidden;
+    transition: all 0.5s linear;
+}
+
+.menu-bar ul li a 
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    font-family: var(--headingFont);
+    color: var(--text);
+    transition: all 0.2s linear;
+}
+
+.menu-bar ul li a:hover 
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--backgroundColor);
+}
+
+.summary 
+{
+    width: 340px;
+    margin: 10px auto;
+    height: 90px;
+    padding: 10px;
+    justify-content: space-between;
+    font-family: var(--textFont);
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px 0px var(--text);
+    cursor: pointer;
+}
+
+.summary.Total 
+{
+    background-color: var(--accent);
+    color: var(--backgroundColor);
+}
+
+.summary.Fail 
+{
+    background-color: var(--fail);
+    color: var(--backgroundColor);
+}
+
+.summary.Success 
+{
+    background-color: var(--success);
+}
+
+
+.summary span 
+{
+    font-size: 20px;
+    font-weight: bold;
+}
